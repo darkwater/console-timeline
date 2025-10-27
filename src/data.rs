@@ -843,4 +843,406 @@ pub const LINEAGES: &[Lineage] = &[
             },
         ],
     },
+    Lineage {
+        name: "PlayStation (Portable)",
+        maker: Maker::Sony,
+        color: Color32::from_rgb(0x00, 0x6f, 0xcd),
+        consoles: &[
+            Console {
+                name: "PlayStation Portable",
+                short_name: "PSP",
+                generation: Some(7),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(2004, 12, 12),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(2005, 3, 24),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(2005, 9, 1),
+                        source: None,
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2014, 6, 3),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 80_000_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2014),
+                    source: None,
+                }],
+                series: &[],
+            },
+            Console {
+                name: "PlayStation Vita",
+                short_name: "PS Vita",
+                generation: Some(8),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(2011, 12, 17),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(2012, 2, 22),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(2012, 2, 22),
+                        source: None,
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2019, 3, 1),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 16_000_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2019),
+                    source: None,
+                }],
+                series: &[],
+            },
+        ],
+    },
+    Lineage {
+        name: "Xbox",
+        maker: Maker::Microsoft,
+        color: Color32::from_rgb(0x10, 0x76, 0x21),
+        consoles: &[
+            Console {
+                name: "Xbox",
+                short_name: "Xbox",
+                generation: Some(6),
+                releases: &[
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(2001, 11, 15),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(2002, 2, 22),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(2002, 3, 14),
+                        source: None,
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2009, 3, 2),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 24_000_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2006),
+                    source: None,
+                }],
+                series: &[],
+            },
+            Console {
+                name: "Xbox 360",
+                short_name: "Xbox 360",
+                generation: Some(7),
+                releases: &[
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(2005, 11, 22),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(2005, 12, 2),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(2005, 12, 10),
+                        source: None,
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2016, 4, 20),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 84_000_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2014),
+                    source: None,
+                }],
+                series: &[],
+            },
+            Console {
+                name: "Xbox One",
+                short_name: "Xbox One",
+                generation: Some(8),
+                releases: &[
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(2013, 11, 22),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(2013, 11, 22),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(2014, 9, 4),
+                        source: None,
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2020, 7, 15),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 58_000_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2020),
+                    source: None,
+                }],
+                series: &[],
+            },
+            Console {
+                name: "Xbox Series X|S",
+                short_name: "Xbox Series X|S",
+                generation: Some(9),
+                releases: &[Release {
+                    region: Region::Global,
+                    date: PartialDate::ymd(2020, 11, 10),
+                    source: None,
+                }],
+                milestones: &[],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 31_000_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2024),
+                    source: None,
+                }],
+                series: &[],
+            },
+        ],
+    },
+    Lineage {
+        name: "Sega",
+        maker: Maker::Sega,
+        color: Color32::from_rgb(0x00, 0x5b, 0xbb),
+        consoles: &[
+            Console {
+                name: "Sega Genesis",
+                short_name: "Genesis",
+                generation: Some(4),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(1988, 10, 29),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(1989, 8, 14),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(1990, 11, 30),
+                        source: None,
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(1997, 4, 1),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 30_750_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(1997),
+                    source: None,
+                }],
+                series: &[],
+            },
+            Console {
+                name: "Sega Saturn",
+                short_name: "Saturn",
+                generation: Some(5),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(1994, 11, 22),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(1995, 5, 11),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(1995, 7, 8),
+                        source: None,
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2000, 3, 30),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 9_260_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2000),
+                    source: None,
+                }],
+                series: &[],
+            },
+            Console {
+                name: "Sega Dreamcast",
+                short_name: "Dreamcast",
+                generation: Some(6),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(1998, 11, 27),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(1999, 9, 9),
+                        source: None,
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(1999, 10, 14),
+                        source: None,
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2001, 3, 31),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 9_130_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2001),
+                    source: None,
+                }],
+                series: &[],
+            },
+        ],
+    },
+    Lineage {
+        name: "Steam Deck",
+        maker: Maker::Valve,
+        color: Color32::from_rgb(0x1b, 0x2b, 0x38),
+        consoles: &[
+            Console {
+                name: "Steam Deck (LCD)",
+                short_name: "Steam Deck LCD",
+                generation: Some(9),
+                releases: &[Release {
+                    region: Region::Global,
+                    date: PartialDate::ymd(2022, 2, 25),
+                    source: None,
+                }],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2023, 11, 16),
+                    region: Region::Global,
+                    source: None,
+                }],
+                measures: &[],
+                series: &[],
+            },
+            Console {
+                name: "Steam Deck (OLED)",
+                short_name: "Steam Deck OLED",
+                generation: Some(9),
+                releases: &[Release {
+                    region: Region::Global,
+                    date: PartialDate::ymd(2023, 11, 16),
+                    source: None,
+                }],
+                milestones: &[],
+                measures: &[],
+                series: &[],
+            },
+        ],
+    },
 ];
