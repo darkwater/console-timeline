@@ -632,4 +632,215 @@ pub const LINEAGES: &[Lineage] = &[
             },
         ],
     },
+    Lineage {
+        name: "Nintendo (Portable)",
+        maker: Maker::Nintendo,
+        color: Color32::from_rgb(0xe4, 0, 0xf),
+        consoles: &[
+            Console {
+                name: "Game Boy",
+                short_name: "GB",
+                generation: Some(4),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(1989, 4, 21),
+                        source: source!(wikipedia: "Game_Boy"),
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(1989, 7, 31),
+                        source: source!(wikipedia: "Game_Boy"),
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(1990, 9, 28),
+                        source: source!(wikipedia: "Game_Boy"),
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2003, 3, 31),
+                    region: Region::Global,
+                    source: source!(wikipedia: "Game_Boy"),
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 118_690_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2003),
+                    source: source!(wikipedia: "Game_Boy"),
+                }],
+                series: &[],
+            },
+            Console {
+                name: "Game Boy Color",
+                short_name: "GBC",
+                generation: Some(5),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(1998, 10, 21),
+                        source: source!(wikipedia: "Game_Boy_Color"),
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(1998, 11, 18),
+                        source: source!(wikipedia: "Game_Boy_Color"),
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(1998, 11, 23),
+                        source: source!(wikipedia: "Game_Boy_Color"),
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2003, 3, 31),
+                    region: Region::Global,
+                    source: source!(wikipedia: "Game_Boy_Color"),
+                }],
+                measures: &[],
+                series: &[],
+            },
+            Console {
+                name: "Game Boy Advance",
+                short_name: "GBA",
+                generation: Some(6),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(2001, 3, 21),
+                        source: source!(wikipedia: "Game_Boy_Advance"),
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(2001, 6, 11),
+                        source: source!(wikipedia: "Game_Boy_Advance"),
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(2001, 6, 22),
+                        source: source!(wikipedia: "Game_Boy_Advance"),
+                    },
+                ],
+                milestones: &[
+                    Milestone {
+                        kind: MilestoneKind::Discontinued,
+                        date: PartialDate::ymd(2008, 11, 18),
+                        region: Region::JP,
+                        source: source!(wikipedia: "Game_Boy_Advance"),
+                    },
+                    Milestone {
+                        kind: MilestoneKind::Discontinued,
+                        date: PartialDate::ymd(2009, 10, 16),
+                        region: Region::EU,
+                        source: source!(wikipedia: "Game_Boy_Advance"),
+                    },
+                    Milestone {
+                        kind: MilestoneKind::Discontinued,
+                        date: PartialDate::ymd(2009, 12, 9),
+                        region: Region::NA,
+                        source: source!(wikipedia: "Game_Boy_Advance"),
+                    },
+                ],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 81_510_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2010),
+                    source: source!(wikipedia: "Game_Boy_Advance"),
+                }],
+                series: &[],
+            },
+            Console {
+                name: "Nintendo DS",
+                short_name: "DS",
+                generation: Some(7),
+                releases: &[
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(2004, 11, 21),
+                        source: source!(wikipedia: "Nintendo_DS"),
+                    },
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(2004, 12, 2),
+                        source: source!(wikipedia: "Nintendo_DS"),
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(2005, 3, 11),
+                        source: source!(wikipedia: "Nintendo_DS"),
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::y(2014),
+                    region: Region::Global,
+                    source: source!(wikipedia: "Nintendo_DS"),
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 154_020_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2016),
+                    source: source!(wikipedia: "Nintendo_DS"),
+                }],
+                series: &[],
+            },
+            Console {
+                name: "Nintendo 3DS",
+                short_name: "3DS",
+                generation: Some(8),
+                releases: &[
+                    Release {
+                        region: Region::JP,
+                        date: PartialDate::ymd(2011, 2, 26),
+                        source: source!(wikipedia: "Nintendo_3DS"),
+                    },
+                    Release {
+                        region: Region::EU,
+                        date: PartialDate::ymd(2011, 3, 25),
+                        source: source!(wikipedia: "Nintendo_3DS"),
+                    },
+                    Release {
+                        region: Region::NA,
+                        date: PartialDate::ymd(2011, 3, 27),
+                        source: source!(wikipedia: "Nintendo_3DS"),
+                    },
+                ],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::ymd(2020, 9, 16),
+                    region: Region::Global,
+                    source: source!(wikipedia: "Nintendo_3DS"),
+                }],
+                measures: &[Measure {
+                    kind: MeasureKind::UnitsSold,
+                    value: Estimate {
+                        point: 75_940_000,
+                        low: None,
+                        high: None,
+                    },
+                    region: Region::Global,
+                    as_of_year: Some(2022),
+                    source: source!(wikipedia: "Nintendo_3DS"),
+                }],
+                series: &[],
+            },
+        ],
+    },
 ];
