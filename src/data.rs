@@ -635,7 +635,7 @@ pub const LINEAGES: &[Lineage] = &[
     Lineage {
         name: "Nintendo (Portable)",
         maker: Maker::Nintendo,
-        color: Color32::from_rgb(0x8f, 0x8f, 0x8f), // Gray color for portables
+        color: Color32::from_rgb(0xe4, 0, 0xf),
         consoles: &[
             Console {
                 name: "Game Boy",
