@@ -49,13 +49,25 @@ pub enum PartialDate {
 }
 
 impl PartialDate {
-    pub fn year(&self) -> i32 {
+    pub const fn y(y: i32) -> Self {
+        Self::Year { y }
+    }
+
+    pub const fn ym(y: i32, m: u8) -> Self {
+        Self::YearMonth { y, m }
+    }
+
+    pub const fn ymd(y: i32, m: u8, d: u8) -> Self {
+        Self::YearMonthDay { y, m, d }
+    }
+
+    pub const fn year(&self) -> i32 {
         match *self {
             Self::Year { y } | Self::YearMonth { y, .. } | Self::YearMonthDay { y, .. } => y,
         }
     }
 
-    pub fn cmp_key(&self) -> (i32, u8, u8) {
+    pub const fn cmp_key(&self) -> (i32, u8, u8) {
         match *self {
             Self::Year { y } => (y, 1, 1),
             Self::YearMonth { y, m } => (y, m, 1),
@@ -76,7 +88,7 @@ impl Display for PartialDate {
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum MilestoneKind {
-    EndOfProduction,
+    Discontinued,
     LastFirstPartyGame,
     LastThirdPartyGame,
     LastUnitSold,
@@ -125,7 +137,7 @@ pub struct Release {
 pub struct Milestone {
     pub kind: MilestoneKind,
     pub date: PartialDate,
-    pub region: Option<Region>,
+    pub region: Region,
     pub source: Option<Source>,
 }
 
@@ -146,4 +158,14 @@ pub struct Series {
     pub points: &'static [TimePoint],
     pub region: Region,
     pub source: Option<Source>,
+}
+
+#[macro_export]
+macro_rules! source {
+    (wikipedia: $name:literal) => {
+        Some(Source {
+            label: "Wikipedia",
+            url: Some(concat!("https://en.wikipedia.org/wiki/", $name)),
+        })
+    };
 }

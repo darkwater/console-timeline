@@ -77,7 +77,7 @@ impl Timeline {
                 let end = console
                     .milestones
                     .iter()
-                    .find(|m| m.kind == MilestoneKind::EndOfProduction)
+                    .find(|m| m.kind == MilestoneKind::Discontinued)
                     .map(|m| m.date)
                     .map(date_to_x);
 
