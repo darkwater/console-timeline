@@ -782,7 +782,12 @@ pub const LINEAGES: &[Lineage] = &[
                         source: source!(wikipedia: "Nintendo_DS"),
                     },
                 ],
-                milestones: &[],
+                milestones: &[Milestone {
+                    kind: MilestoneKind::Discontinued,
+                    date: PartialDate::y(2014),
+                    region: Region::Global,
+                    source: source!(wikipedia: "Nintendo_DS"),
+                }],
                 measures: &[Measure {
                     kind: MeasureKind::UnitsSold,
                     value: Estimate {
